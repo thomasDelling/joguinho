@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    /* Definindo a imagem de fundo do body */
+    background-image: url('assents/capa1.png'); /* Caminho da imagem */
+    background-size: 100% 137%;
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    height: 80vh; /* A altura do body será 100% da altura da janela de visualização */
+    margin: 0; /* Remove a margem padrão do body */
+    padding: 0; /* Remove o padding padrão do body */
+}
+
+
+.titulo-jogo {
+    font-family: "Copse", serif;
+    font-weight: 400;
+  
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    background: linear-gradient(0deg, #0000ff, #ffff00, #008000);
+    padding: 20px 30px; /* Ajuste o padding para dar mais espaço dentro do retângulo */
+    border-radius: 25px;
+    width: auto; /* Ajusta a largura automaticamente com base no conteúdo */
+    height: auto; /* Permite que a altura do retângulo seja ajustada automaticamente */
+    position: absolute;
+    top: 20%; /* Posiciona o topo a 50% da altura da tela */
+    left: 50%; /* Posiciona a esquerda a 50% da largura da tela */
+    transform: translate(-50%, -50%); /* Ajusta para centralizar perfeitamente */
+    display: inline-block; /* Faz com que o tamanho do retângulo seja ajustado ao texto */
+}
+
+
+
+
+button {
+    background-color: #4CAF50;  /* Cor de fundo */
+    color: white;  /* Cor do texto */
+    font-size: 1.2rem;  /* Tamanho da fonte */
+    padding: 15px 30px;  /* Preenchimento interno */
+    border: none;  /* Sem borda */
+    border-radius: 20px;  /* Bordas arredondadas */
+    cursor: pointer;  /* Muda o cursor para uma mãozinha */
+    margin: 10px;  /* Espaçamento entre os botões */
+    transition: background-color 0.3s ease;  /* Efeito de transição */
+    top: 50%;
+    position: relative;
+}
+
+button:hover {
+    background-color: #45a049;  /* Cor de fundo quando passar o mouse */
+}
+
+.meus-botoes {
+    display: flex;  /* Usando Flexbox */
+    flex-direction: column;  /* Alinhando os botões verticalmente */
+    align-items: center;  /* Centralizando os botões horizontalmente */
+    justify-content: center;  /* Centralizando verticalmente */
+    height: 50vh;  /* Usando 60% da altura da tela */
+   /*gap: 0px;   Espaçamento entre os botões */
+}
+
+footer {
+    position: fixed;  /* Fixa o rodapé no fundo da página */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;  /* Cor de fundo */
+    color: white;  /* Cor do texto */
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1rem;
+}
+
+

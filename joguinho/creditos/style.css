@@ -1,0 +1,67 @@
+body {
+    /* Definindo a imagem de fundo do body */
+    background-image: url('../assents/capa1.png'); /* Caminho da imagem */
+    background-size: 100% 150%;
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    height: 80vh; /* A altura do body será 100% da altura da janela de visualização */
+    margin: 0; /* Remove a margem padrão do body */
+    padding: 0; /* Remove o padding padrão do body */
+    overflow: hidden;
+}
+
+
+.creditos-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.creditos {
+    position: absolute;
+    bottom: 0;
+    animation: rolar 15s linear infinite;
+    text-align: center;
+}
+
+.creditos ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.creditos li {
+    font-size: 2rem;  /* Aumenta o tamanho da fonte */
+    color: white;  /* Cor do texto */
+    font-weight: bold;  /* Deixa o texto em negrito */
+    margin: 10px 0;  /* Espaçamento entre os itens */
+    background-color: rgba(128, 128, 128, 0.6);  /* Fundo cinza com 60% de opacidade */
+    padding: 5px;  /* Espaço entre o fundo e o texto */
+    border-radius: 5px;  /* Bordas arredondadas */
+}
+
+
+
+@keyframes rolar {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+button {
+    background-color: #4CAF50;  /* Cor de fundo */
+    color: white;  /* Cor do texto */
+    font-size: 1.2rem;  /* Tamanho da fonte */
+    padding: 15px 30px;  /* Preenchimento interno */
+    border: none;  /* Sem borda */
+    border-radius: 5px;  /* Bordas arredondadas */
+    cursor: pointer;  /* Muda o cursor para uma mãozinha */
+    margin: 10px;  /* Espaçamento entre os botões */
+    transition: background-color 0.3s ease;  /* Efeito de transição */
+}
